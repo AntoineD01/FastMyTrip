@@ -6,7 +6,11 @@ from functions import *  # Import the functions from your previous code
 #st.markdown("<h1 style='text-align: center;'>FastMyTrip</h1>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1, 1.5, 1])  # Adjust column ratios to center the image
 with col2:
-    st.image("../assets/FastMyTripRoundNoBackground.png", width=250)
+    try:
+        st.image("../assets/FastMyTripRoundNoBackground.png", width=250)
+    except MediaFileStorageError as e:
+        st.error("Error loading image: Please check the file path and ensure the image exists.")
+        print(f"Detailed error: {e}")
 
 # ---- USER PART ----
 st.write("**Select the variables for your trip :**")

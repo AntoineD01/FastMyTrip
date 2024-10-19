@@ -1,0 +1,5 @@
+[theme]
+base="dark"
+primaryColor="#de571f"
+textColor="#1680c8"
+showCopyToClipboard = true

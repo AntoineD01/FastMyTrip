@@ -6,7 +6,7 @@ from functions import *  # Import the functions from your previous code
 #st.markdown("<h1 style='text-align: center;'>FastMyTrip</h1>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1, 1.5, 1])  # Adjust column ratios to center the image
 with col2:
-    st.image("../assets/FastMyTripRoundNoBackground.png", width=250)
+    st.image("assets/FastMyTripRoundNoBackground.png", width=250)
     
 # ---- USER PART ----
 st.write("**Select the variables for your trip :**")

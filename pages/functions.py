@@ -1,8 +1,5 @@
 import requests
-from datetime import datetime, timedelta
-import time
 from fuzzywuzzy import process
-import random
 
 city_codes = {
     "New York City, USA": "JFK",

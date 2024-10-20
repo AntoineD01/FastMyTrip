@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime
-from functions import *  # Import the functions from your previous code
+from functions import *
 
 # ---- WELCOME PART ----
 #st.markdown("<h1 style='text-align: center;'>FastMyTrip</h1>", unsafe_allow_html=True)

@@ -21,8 +21,9 @@ Here’s a README template for your FastMyTrip project. You can adjust the detai
 
 - **User Input**: Allows users to enter their current city, preferred weather conditions, temperature, and departure date.
 - **Weather Data**: Retrieves weather information from the OpenWeatherMap API to match destinations based on user preferences.
-- **Flight Search**: Integrates with flight search APIs to find and display available flights to matching destinations.
-- **Hotel Recommendations**: Suggests hotels based on user-selected destinations and preferences.
+- **Flight Search**: Integrates with flight search APIs to find and display available flights to matching destinations using Amadeus API.
+- **Hotel Recommendations**: Suggests hotels based on user-selected destinations and preferences using Amadeus API.
+- **Information about the city*: Give some information about the city selected using Wikipidia API.
 - **Interactive UI**: Built using Streamlit for a seamless user experience.
 
 ## Technologies
@@ -30,8 +31,8 @@ Here’s a README template for your FastMyTrip project. You can adjust the detai
 - **Frontend**: Streamlit
 - **APIs**:
   - OpenWeatherMap API for weather data
-  - Flight search API for retrieving flight information
-  - Hotel search API for accommodations
+  - Amadeus API for retrieving flight information and hotels
+  - Wikipedia API for information about the city
 - **Python Libraries**: 
   - Requests (for API calls)
   - Datetime (for handling date inputs)

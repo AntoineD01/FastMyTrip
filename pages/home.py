@@ -2,6 +2,11 @@ import streamlit as st
 from datetime import datetime
 import random
 from functions import *
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv('API.env')
+API_WEATHER = os.getenv('API_WEATHER')
 
 # ---- WELCOME PART ----
 #st.markdown("<h1 style='text-align: center;'>FastMyTrip</h1>", unsafe_allow_html=True)

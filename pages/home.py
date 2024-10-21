@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+import random
 from functions import *
 
 # ---- WELCOME PART ----

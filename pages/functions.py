@@ -1,5 +1,9 @@
 import requests
 from fuzzywuzzy import process
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 city_codes = {
     "New York City, USA": "JFK",
@@ -155,10 +159,10 @@ weather_possible = {
 
 
 # Amadeus API credentials
-API_KEY = 'Hia3mrHL5Enqce1DBCUZAtnBCV5r3ZyZ'
-API_SECRET = 'AmlLKKWM2cwmufrT'
+API_KEY = os.getenv('API_KEY')
+API_SECRET = os.getenv('API_SECRET')
 # OpenWeather API key
-API_WEATHER = '82bd0ac1ed6570afbf57976105eed6b9'
+API_WEATHER = os.getenv('API_WEATHER')
 
 # Function to authenticate and get access token
 def get_amadeus_access_token():
